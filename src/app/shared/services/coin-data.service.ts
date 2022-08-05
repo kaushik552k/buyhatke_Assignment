@@ -8,21 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class CoinDataService {
 
-  coinApiURL: string = environment.coinApi;
-  private headers: HttpHeaders = new HttpHeaders({
-    'Access-Control-Allow-Origin': '*'
-  });
   constructor(
       private httpClient: HttpClient,
       ) {
-        // this.headers = new HttpHeaders().set("Access-Control-Allow-Origin", "*")
   }
 
-  public getCoinData(): Observable<any> {
-      const url = this.coinApiURL;
-      return this.httpClient.get<any>(url);
-  }
-
+  // function to combine two objects
   public mergeObject(obj1, obj2) {
     let output = {};
     let perChange = {};
