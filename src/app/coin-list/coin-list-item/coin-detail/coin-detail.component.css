@@ -1,0 +1,58 @@
+.body {
+  background-color: antiquewhite;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.container-2 {
+  font-size: 25px;
+  padding-left: 2rem;
+  margin-bottom: 15px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.main-frame{
+  margin-bottom: 20px;
+}
+.secondary-frame {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: rgba(243, 244, 246, 1);
+}
+
+.positive {
+  color: #4eaf0a;
+}
+
+.negative {
+  color: #dc3545;
+}
+progress{
+  width: 100%;
+  height: 15px;
+  outline: none;
+  opacity: .7;
+  border-radius: 0.25rem;
+}
+.progress-data{
+  display: flex;
+  justify-content: space-between;
+}
+/* ------ */
+
+
+
+
+
+
+

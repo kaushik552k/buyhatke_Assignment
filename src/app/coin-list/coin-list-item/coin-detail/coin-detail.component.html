@@ -1,0 +1,49 @@
+<div class="body">
+  <div class="container">
+    <div class="main-frame">
+      <div class="title">
+        <img src="{{ coin.coinIcon }}" alt="" class="logo" />
+        <span style="font-size: 2rem">{{ coin.coinName }}</span>
+        <span style="font-size: 2rem; font-weight: bold">({{ coin.code }})</span>
+      </div>
+      <div>
+        <span style="font-size: 2rem; margin: 10px">{{
+          coin.last_traded_price | currency: "&#8377;"
+          }}</span>
+        <span style="font-size: 2rem; font-weight: bold" [ngClass]="{ positive: isPositive, negative: !isPositive }"><i
+            class="fa" aria-hidden="true" [ngClass]="{
+              'fa-caret-up': isPositive,
+              'fa-caret-down': !isPositive
+            }"></i>{{ coin.percentChange }}</span>
+      </div>
+      <br /><br /><br />
+      <div class="progress">
+        <progress id="file" value="{{ coin.highest_buy_bid }}" min="0" max="{{ coin.lowest_sell_bid }}"></progress>
+        <div class="progress-data">
+          <span><b>{{ coin.lowest_sell_bid | currency: "&#8377;" }}</b></span>
+          <span>24H Range</span>
+          <span><b>{{ coin.highest_buy_bid | currency: "&#8377;" }}</b></span>
+        </div>
+        <br />
+        <span><i class="fa fa-caret-right" aria-hidden="true"></i> Price Meter to
+          compare lowest sell price and highest buy price</span>
+      </div>
+    </div>
+    <div class="secondary-frame">
+      <app-data-table [coinData]="coin"></app-data-table>
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="other-info">
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+      <span>Minimum amount need to trade: <b>{{ coin.minTradeAmt }}</b></span>
+    </div>
+  </div>
+  <marquee class="marq" direction="right" behavior="alternate" bgColor="#76BA99" height="35">
+    <div class="geek1" style="color: white; font-size: 25px; padding: 2px">
+      Get flat <span style="color: red">20% OFF</span> on your first &#8377;500!
+      Also 100 lucky buyers will get additional
+      <span style="color: greenyellow">10%</span> coins, HURRY!!!
+    </div>
+  </marquee>
+</div>

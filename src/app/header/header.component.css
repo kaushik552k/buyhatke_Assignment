@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.header{
+  display: flex;
+  font-family: 'Shadows Into Light', cursive;
+  justify-content: center;
+}
+.logo{
+  width: 15%;
+}
+.banner{
+  color: #0bb3db;
+}

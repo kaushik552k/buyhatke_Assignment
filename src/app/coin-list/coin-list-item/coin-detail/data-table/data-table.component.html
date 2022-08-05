@@ -1,0 +1,69 @@
+<h2 class="info-data">
+  {{ coinData.code }} Price Statistics
+</h2>
+<table>
+  <caption>
+    {{
+    coinData.coinName
+    }}
+    Price Today
+  </caption>
+  <tbody>
+    <tr>
+      <th>
+        <div class="info-data">Coin Type</div>
+      </th>
+      <td>
+        <div class="bold">{{ coinData.coinType || "NULL" }}</div>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <div class="info-data">Yesterday Buying Price</div>
+      </th>
+      <td>
+        <div class="bold">
+          {{ coinData.yes_price | currency: "&#8377;" }}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <div class="info-data">Last Buying Price</div>
+      </th>
+      <td>
+        <div class="bold">
+          {{ coinData.last_traded_price | currency: "&#8377;" }}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <div class="info-data">Heighest Buying Price</div>
+      </th>
+      <td>
+        <div class="bold">
+          {{ coinData.highest_buy_bid | currency: "&#8377;" }}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <div class="info-data">Lowest Sell Price</div>
+      </th>
+      <td>
+        <div class="bold">
+          {{ coinData.lowest_sell_bid | currency: "&#8377;" }}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <div class="info-data">Volume / Market Cap</div>
+      </th>
+      <td>
+        <div class="bold">{{ coinData.volume.volume }}</div>
+      </td>
+    </tr>
+  </tbody>
+</table>

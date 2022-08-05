@@ -1,0 +1,21 @@
+<div class="results-table">
+  <table id="coinsTable">
+    <thead>
+      <tr class="table-header">
+        <th style="width: 30%;" class="left column" [appSort]="coinsData" data-order="desc" data-name="coinName" scope="col">Coins <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th class="column" [appSort]="coinsData" data-order="desc" data-name="last_traded_price" data-type="number" scope="col">Price <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th style="width: 10%;" class="column" [appSort]="coinsData" data-order="desc" data-name="percentChange" data-type="number" scope="col">24H % <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th class="column" [appSort]="coinsData" data-order="desc" data-name="highest_buy_bid" data-type="number" scope="col">24H High <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th class="column" [appSort]="coinsData" data-order="desc" data-name="lowest_sell_bid" data-type="number" scope="col">24H Low <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th style="width: 10%;" class="column" [appSort]="coinsData" data-order="desc" data-name="volume" data-type="number" scope="col">Volume <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th class="column" scope="col">Fav</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let coin of coinsData" class="tiles" (click)="onClick(coin,$event)"
+        app-coin-list-item
+        [coin]="coin">
+        </tr>
+    </tbody>
+  </table>
+</div>

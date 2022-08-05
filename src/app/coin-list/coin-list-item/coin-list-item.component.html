@@ -1,0 +1,30 @@
+<td class="title" data-label="Coin">
+  <img src="{{coin.coinIcon}}" alt="" class="image">
+  <span class="name">
+    {{coin.coinName}}
+    <p class="small">{{coin.code}}</p>
+  </span>
+</td>
+<td class="price" data-label="Price">
+  <span>{{coin.last_traded_price | currency:"&#8377;"}}</span>
+</td>
+<td class="perChange" [ngClass]="{'positive' : isPositive,'negative':!isPositive }" data-label="24%">
+  <!-- <i class="fa" aria-hidden="true" [ngClass]="{'fa-caret-up' : isPositive,'fa-caret-down':!isPositive }"></i>{{coin.percentChange}}% -->
+  <span *ngIf="isPositive==true; else elseSpan"><i class="fa fa-caret-up"
+      aria-hidden="true"></i>{{coin.percentChange}}%</span>
+  <ng-template #elseSpan> <i class="fa fa-caret-down" aria-hidden="true"></i>{{coin.percentChange * -1}}% </ng-template>
+
+</td>
+<td class="24high" data-label="24H">
+  <span>{{coin.highest_buy_bid | currency:"&#8377;"}}</span>
+</td>
+<td class="24low" data-label="24L">
+  <span>{{coin.lowest_sell_bid | currency:"&#8377;"}}</span>
+</td>
+<td class="volume" data-label="Volume">
+  {{coin.volume.volume}}
+</td>
+<td data-label="Fav">
+  <button class="fav fa" (click)="addToFav()" [ngClass]="{'fa-star-o' : !isFavourite,'fa-star':isFavourite }"
+    title="Set as Favourite"></button>
+</td>

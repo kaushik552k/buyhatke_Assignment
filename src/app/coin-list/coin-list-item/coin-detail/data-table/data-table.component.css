@@ -1,0 +1,35 @@
+.info-data{
+  font-weight: bold
+}
+.bold {
+  margin: 10px;
+  font-weight: bold;
+}
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+}
+th {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, 1);
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+}
+td {
+  line-height: 1.25rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: right;
+}
+
+
+
+
+
+
+

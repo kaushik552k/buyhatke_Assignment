@@ -1,0 +1,34 @@
+
+#coinsTable{
+  width: 100%;
+  border-spacing: 0;
+}
+.tiles{
+  text-align: right;
+  height: 7vh;
+}
+.tiles:hover{
+  cursor: pointer;
+  background-color: #e4ebea;
+
+}
+.column{
+  cursor: pointer;
+  text-align: end;
+  font-size: 16px;
+  padding: 10px 0px;
+  border-bottom: 3px solid black;
+  margin-bottom: 12px;
+  width: 15%;
+}
+.left{
+  text-align: justify;
+}
+@media (max-width:1020px) {
+
+.result-table{
+  overflow-x: scroll;
+}
+}
+
+

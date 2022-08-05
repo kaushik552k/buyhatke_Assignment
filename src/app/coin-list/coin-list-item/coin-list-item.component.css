@@ -1,0 +1,51 @@
+.image {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.small {
+  margin: 0;
+  font-size: 10px;
+  color: rgb(127, 136, 157);
+  text-transform: uppercase;
+}
+
+.price {
+  justify-content: space-around;
+}
+
+.title {
+  text-align: justify;
+}
+
+.fav {
+  border: none;
+  cursor: pointer;
+  background: none;
+  height: 40px;
+  width: 45px;
+}
+
+.fa-star {
+  color: #fabc3c;
+}
+
+.perChange {
+  font-weight: bold;
+  color: rgb(127, 136, 157);
+}
+
+.name {
+  display: inline-block;
+}
+
+.positive {
+  color: #4eaf0a;
+}
+
+.negative {
+  color: #dc3545;
+}
+.overflow{
+  overflow-x: auto;
+}
