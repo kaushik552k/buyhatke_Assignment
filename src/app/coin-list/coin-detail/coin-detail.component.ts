@@ -25,7 +25,6 @@ export class CoinDetailComponent implements OnInit {
     if(parseInt(this.coin.percentChange)>0){
       this.isPositive=true;
     }
-    console.log(this.coin);
 
   }
 

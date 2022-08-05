@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CoinDetailComponent } from './coin-list/coin-list-item/coin-detail/coin-detail.component';
+import { CoinDetailComponent } from './coin-list/coin-detail/coin-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
