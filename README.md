@@ -1,3 +1,6 @@
+## Demo link
+https://kaushik-dutta.netlify.app/
+
 # CoinApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
